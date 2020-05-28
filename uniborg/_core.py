@@ -85,7 +85,7 @@ async def install_plug_in(event):
                 await event.edit("Installed Plugin `{}`".format(os.path.basename(downloaded_file_name)))
             else:
                 os.remove(downloaded_file_name)
-                await event.edit("`Abe Sale ! Plugin already exists, Can't instll`")
+                await event.edit("`Pling ! Plugin already exists, Can't install`")
         except Exception as e:  # pylint:disable=C0103,W0703
             await event.edit(str(e))
             os.remove(downloaded_file_name)
