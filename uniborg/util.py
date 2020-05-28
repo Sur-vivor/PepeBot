@@ -22,7 +22,7 @@ else:
         from config import Development as Config
 
 
-def admin_cmd(pattern=None, allow_sudo=False, **args):
+def admin_cmd(pattern=None,**args):
     args["func"] = lambda e: e.via_bot_id is None
     
     pattern = args.get("pattern", None)
